@@ -1,0 +1,44 @@
+@import 'base';
+
+.post-detail-container {
+  padding: $HEIGHT_HEADER 10px;
+
+  .comments-title {
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+    padding-top: 10px;
+    font-weight: 500;
+  }
+  ul.post-detail-comments {
+    li.post-detail-comment {
+      list-style: disc;
+      margin-left: 1.5em;
+    }
+    li.post-detail-comment-empty {
+      font-style: italic;
+    }
+  }
+  > form {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+
+    > textarea {
+      border: 1px solid $COLOR_BORDER_LIGHTGRAY;
+      padding: 10px;
+      box-sizing: border-box;
+      resize: none;
+      border-radius: 2px;
+      flex-grow: 1;
+      margin-right: 6px;
+      &:focus {
+        outline: none;
+      }
+    }
+    > button {
+      height: 57px;
+      line-height: 50px;
+      border-radius: 2px;
+    }
+  }
+}
